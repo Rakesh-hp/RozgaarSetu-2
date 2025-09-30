@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Supabase Course Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This repository contains the implementation of a service booking system, "RozgaarSetu," and a Next.js-based web application. The project demonstrates the integration of modern web development technologies and a structured database setup.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Projects](#projects)
+  - [Service Booking System](#service-booking-system)
+  - [Next.js Application](#nextjs-application)
+- [Setup Instructions](#setup-instructions)
+- [Contributing](#contributing)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
+- **Backend**: Supabase (PostgreSQL as a service)
+- **Database**: SQL scripts for schema setup
+- **Tools**: ESLint, PostCSS
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Projects
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Service Booking System
+
+The "RozgaarSetu" service booking system allows customers to book blue-collar workers for various services. For detailed information, refer to the [Service Booking README](./SERVICE_BOOKING_README.md).
+
+### Next.js Application
+
+A Next.js-based web application that serves as the frontend for the service booking system. For more details, refer to the [Next.js Project README](./project-next/README.md).
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/supabase-course-project.git
+   ```
+2. Navigate to the `project-next` directory:
+   ```bash
+   cd project-next
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request for any improvements or features.
